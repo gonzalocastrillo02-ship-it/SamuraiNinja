@@ -1,0 +1,14 @@
+{
+  "name": "samurai-ninja",
+  "version": "1.0.0",
+  "description": "Bot de OGame gestionado desde AutoBot Portal (Base44). Se conecta a la función botRunner para pull/heartbeat.",
+  "main": "runner.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node runner.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
