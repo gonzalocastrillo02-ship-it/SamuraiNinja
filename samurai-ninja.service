@@ -1,0 +1,17 @@
+[Unit]
+Description=SamuraiNinja runner (OGame bot controlado desde AutoBot Portal)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/samurai-ninja
+ExecStart=/usr/bin/node /opt/samurai-ninja/runner.js
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+StandardOutput=append:/var/log/samurai-ninja.log
+StandardError=append:/var/log/samurai-ninja.log
+
+[Install]
+WantedBy=multi-user.target
